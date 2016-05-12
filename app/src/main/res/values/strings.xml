@@ -1,3 +1,9 @@
 <resources>
     <string name="app_name">DormCleaner</string>
+    <string-array name="tasks">
+        <item>Take out the Trash</item>
+        <item>Sweep the Floor</item>
+        <item>Clean the Kitchen</item>
+        <item>Scrub the Washroom</item>
+    </string-array>
 </resources>
