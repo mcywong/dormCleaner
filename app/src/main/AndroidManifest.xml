@@ -15,6 +15,15 @@
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
         </activity>
+        <activity
+            android:name=".Task_Detail_Activity"
+            android:label="@string/title_activity_task__detail_"
+            android:parentActivityName=".taskViewActivity"
+            android:theme="@style/AppTheme.NoActionBar">
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value="com.martinwong.dormcleaner.taskViewActivity" />
+        </activity>
     </application>
 
 </manifest>

@@ -6,4 +6,5 @@
         <item>Clean the Kitchen</item>
         <item>Scrub the Washroom</item>
     </string-array>
+    <string name="title_activity_task__detail_">Task_Detail_Activity</string>
 </resources>
