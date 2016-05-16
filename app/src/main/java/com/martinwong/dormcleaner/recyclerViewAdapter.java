@@ -26,8 +26,7 @@ public class recyclerViewAdapter extends RecyclerView.Adapter<viewHolder> {
     public viewHolder onCreateViewHolder(ViewGroup parent, int viewType) {
         //Inflate the layout, initialize the View Holder
         View v = LayoutInflater.from(parent.getContext()).inflate(R.layout.task_row_layout, parent, false);
-        viewHolder holder = new viewHolder(v);
-        return holder;
+        return new viewHolder(v);
 
     }
 
@@ -36,7 +35,7 @@ public class recyclerViewAdapter extends RecyclerView.Adapter<viewHolder> {
 
         //Use the provided View Holder on the onCreateViewHolder method to populate the current row on the RecyclerView
         holder.title.setText(list.get(position).taskTitle);
-        holder.description.setText(list.get(position).taskDescription);
+        //holder.description.setText(list.get(position).taskDescription);
         holder.imageView.setImageResource(list.get(position).imageId);
 
         //animate(holder);

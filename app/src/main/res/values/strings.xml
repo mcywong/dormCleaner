@@ -7,4 +7,12 @@
         <item>Scrub the Washroom</item>
     </string-array>
     <string name="title_activity_task__detail_">Task_Detail_Activity</string>
+
+    <!--Action Bar Title Strings-->
+    <string name="main_title">Keep the Dorm Clean</string>
+    <string name="add_title">Add a Task</string>
+
+    <!--newTask Hint Value-->
+    <string name="task_name_field">Task Name</string>
+    <string name="task_description_field">Description</string>
 </resources>

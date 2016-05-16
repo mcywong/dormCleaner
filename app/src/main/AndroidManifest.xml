@@ -17,11 +17,13 @@
         <activity
             android:name=".Task_Detail_Activity"
             android:label="@string/title_activity_task__detail_"
-            android:parentActivityName=".taskViewActivity"
-            android:theme="@style/AppTheme.NoActionBar">
+            android:parentActivityName=".taskViewActivity">
             <meta-data
                 android:name="android.support.PARENT_ACTIVITY"
                 android:value="com.martinwong.dormcleaner.taskViewActivity" />
+        </activity>
+        <activity android:name=".newTask">
+
         </activity>
     </application>
 
