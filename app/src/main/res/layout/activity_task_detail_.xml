@@ -13,6 +13,19 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:id="@+id/detail_icon"
-        android:layout_alignParentTop="true"
-        android:layout_alignParentEnd="true" />
+        android:layout_alignParentStart="true"
+        android:layout_alignParentTop="true" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:inputType="textMultiLine"
+        android:ems="10"
+        android:id="@+id/taskDescription"
+        android:layout_below="@+id/detail_icon"
+        android:layout_toEndOf="@+id/detail_icon"
+        android:layout_marginTop="30dp"
+        android:background="@android:color/transparent"/>
+
+
 </RelativeLayout>

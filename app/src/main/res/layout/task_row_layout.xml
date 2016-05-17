@@ -26,18 +26,22 @@
             android:id="@+id/title"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:layout_alignParentTop="true"
+            android:layout_centerVertical="true"
             android:layout_toRightOf="@+id/taskIcon"
-            android:text="Title"
-            android:textSize="25sp" />
+            android:layout_toLeftOf="@+id/deleteTask"
+            android:textSize="22sp" />
 
-        <!--<TextView-->
-            <!--android:id="@+id/description"-->
-            <!--android:layout_width="wrap_content"-->
-            <!--android:layout_height="wrap_content"-->
-            <!--android:layout_below="@+id/title"-->
-            <!--android:layout_toRightOf="@+id/taskIcon"-->
-            <!--android:text="Description" />-->
+        <ImageButton
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/deleteTask"
+            android:layout_centerVertical="true"
+            android:layout_alignParentEnd="true"
+            android:src="@drawable/ic_delete"
+            android:background="#ffffff"
+            android:onClick="deleteTask"
+            />
+
 
     </RelativeLayout>
 

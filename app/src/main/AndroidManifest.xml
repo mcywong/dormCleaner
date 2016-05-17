@@ -23,7 +23,9 @@
                 android:value="com.martinwong.dormcleaner.taskViewActivity" />
         </activity>
         <activity android:name=".newTask">
-
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value="com.martinwong.dormcleaner.taskViewActivity" />
         </activity>
     </application>
 
