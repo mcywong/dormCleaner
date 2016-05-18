@@ -15,6 +15,15 @@ public class databaseHelper extends SQLiteOpenHelper {
     private static final String TASK_TITLE = "Task Title";
     private static final String TASK_DESCRIPTION = "Task Title";
     private static final String TASK_IMAGE = "Task Image";
+    private static final String SQL_CREATE_TABLE =
+            "CREATE TABLE " + TABLE_NAME + " (" +
+                    UID + " INTEGER PRIMARY KEY," +
+                    TASK_TITLE + "text" + "," +
+                    TASK_DESCRIPTION + "text" + "," +
+                    TASK_IMAGE + "int" + "," +
+            " )";
+
+
     private Context context;
 
     public databaseHelper(Context context){
@@ -24,11 +33,12 @@ public class databaseHelper extends SQLiteOpenHelper {
 
     @Override
     public void onCreate(SQLiteDatabase db) {
-
+        db.execSQL(SQL_CREATE_TABLE);
     }
 
     @Override
     public void onUpgrade(SQLiteDatabase db, int oldVersion, int newVersion) {
-
+        db.execSQL("DROP TABLE IF EXISTS " + TABLE_NAME);
+        onCreate(db);
     }
 }
