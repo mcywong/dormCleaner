@@ -14,5 +14,15 @@ public class taskData {
         imageId = image;
     }
 
+    static taskData[] getSampleTasks(){
+        taskData getToiletPaper = new taskData("Get Toliet Paper",
+                "Restock toilet paper before we run out and are stuck in the washroom.",
+                R.drawable.ic_toilet_paper);
+        taskData sweep = new taskData("Sweep Floor",
+                "Sweep the floors clean of food scraps, dust, and hair.",
+                R.drawable.ic_sweep);
+
+        return new taskData[] {getToiletPaper, sweep};
+    }
 
 }

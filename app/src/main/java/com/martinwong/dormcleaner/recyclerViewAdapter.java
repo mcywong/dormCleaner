@@ -33,7 +33,7 @@ public class recyclerViewAdapter extends RecyclerView.Adapter<viewHolder> {
     @Override
     public void onBindViewHolder(viewHolder holder, int position) {
 
-        //Use the provided View Holder on the onCreateViewHolder method to populate the current row on the RecyclerView
+        //Use the provided View Holder from the onCreateViewHolder method to populate the current row on the RecyclerView
         holder.title.setText(list.get(position).taskTitle);
         //holder.description.setText(list.get(position).taskDescription);
         holder.imageView.setImageResource(list.get(position).imageId);

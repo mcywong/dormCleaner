@@ -32,9 +32,6 @@ public class viewHolder extends RecyclerView.ViewHolder implements View.OnClickL
 
     @Override
     public void onClick(View v) {
-        TextView title = (TextView) itemView.findViewById(R.id.title);
-//        TextView description = (TextView) itemView.findViewById(R.id.description);
-        ImageView icon = (ImageView) itemView.findViewById(R.id.taskIcon);
         detailSegue = new Intent(v.getContext(), Task_Detail_Activity.class);
         detailSegue.putExtra("Title", title.getText().toString());
 //        detailSegue.putExtra("Description", title.getText().toString());
