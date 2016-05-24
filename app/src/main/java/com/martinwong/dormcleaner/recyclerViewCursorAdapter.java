@@ -7,7 +7,7 @@ import android.support.v7.widget.RecyclerView;
  * Created by Martin Wong on 2016-05-22.\
  * Exposes db dataset to viewholder for inflation into the recycler view
  */
-public abstract class recyclerViewCursorAdapter<VH extends RecyclerView.ViewHolder> extends RecyclerView.Adapter<VH> {
+public abstract class RecyclerViewCursorAdapter<VH extends RecyclerView.ViewHolder> extends RecyclerView.Adapter<VH> {
     private Cursor cursor;
 
     // Provides adapter with dataset
@@ -28,10 +28,15 @@ public abstract class recyclerViewCursorAdapter<VH extends RecyclerView.ViewHold
         return this.cursor;
     }
 
+    @Override
+    public void setHasStableIds(boolean hasStableIds) {
+        super.setHasStableIds(true);
+    }
+
     public Cursor getCursor(){
         return this.cursor;
     }
-    //Called when data is requested to bind to view holder for inflation
+    //Transfer to call with cursor
     @Override
     public final void onBindViewHolder(final VH holder, final int position){
         final Cursor cursor = this.getItem(position);

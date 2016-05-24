@@ -1,5 +1,7 @@
 package com.martinwong.dormcleaner;
 
+import android.content.ContentValues;
+
 /**
  * Created by Martin Wong on 2016-05-15.
  */
@@ -14,7 +16,7 @@ public class taskData {
         imageId = image;
     }
 
-    static taskData[] getSampleTasks(){
+    public static taskData[] getSampleTasks(){
         taskData getToiletPaper = new taskData("Get Toliet Paper",
                 "Restock toilet paper before we run out and are stuck in the washroom.",
                 R.drawable.ic_toilet_paper);
@@ -23,6 +25,14 @@ public class taskData {
                 R.drawable.ic_sweep);
 
         return new taskData[] {getToiletPaper, sweep};
+    }
+
+    public ContentValues toContentValues(){
+        ContentValues newValues = new ContentValues();
+        newValues.put(taskDatabase.TASK_TITLE, this.taskTitle);
+        newValues.put(taskDatabase.TASK_DESCRIPTION, this.taskDescription);
+        newValues.put(taskDatabase.TASK_IMAGE, this.imageId);
+        return newValues;
     }
 
 }

@@ -27,6 +27,9 @@
                 android:name="android.support.PARENT_ACTIVITY"
                 android:value="com.martinwong.dormcleaner.taskViewActivity" />
         </activity>
+        <provider
+            android:authorities="com.martinwong.dromcleaner.provider"
+            android:name=".taskDatabase" />
     </application>
 
 </manifest>

@@ -13,7 +13,17 @@
         xmlns:android="http://schemas.android.com/apk/res/android"
         android:id="@+id/recyclerview"
         android:layout_width="match_parent"
-        android:layout_height="match_parent"/>
+        android:layout_height="match_parent"
+        android:layout_marginBottom="46dp"/>
+
+    <TextView
+        android:id="@+id/empty_view"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:gravity="center"
+        android:visibility="gone"
+        android:text="@string/no_data_available"
+        android:textSize="30sp" />
 
     <Button
         android:layout_width="wrap_content"
@@ -22,5 +32,5 @@
         android:id="@+id/button"
         android:layout_alignParentBottom="true"
         android:layout_alignParentEnd="true"
-        android:onClick="addTask"/>
+        android:onClick="navigateToAddTask"/>
 </RelativeLayout>
